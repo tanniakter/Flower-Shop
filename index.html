@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-50">
+
+    <!-- Navbar -->
+    <header class="bg-green-600 text-white">
+        <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold">🌸 FlowerShop</a>
+            <ul class="hidden md:flex space-x-10 text-lg">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#products" class="hover:text-gray-300">Products</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-3xl" id="menu-icon">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-700 text-white h-[90vh] flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome to FlowerShop</h1>
+        <p class="text-xl md:text-2xl mb-10">Fresh Flowers Delivered Right to Your Doorstep</p>
+        <a href="#products"
+            class="bg-yellow-400 text-green-700 px-8 py-3 rounded-lg text-2xl hover:bg-yellow-300 transition duration-300">
+            🌼 Shop Now
+        </a>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-6">
+        <h2 class="text-4xl text-center font-bold mb-12">🌷 Our Best Sellers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <!-- Product 1 -->
+            <div class="bg-white shadow-2xl rounded-lg overflow-hidden">
+                <img src="c:\Users\WALTON\Downloads\images rose.jpg" alt="Rose Bouquet" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Rose Bouquet</h3>
+                    <p class="text-gray-500 mb-6">Freshly picked roses for all occasions.</p>
+                    <span class="text-2xl font-bold text-green-600">$29.99</span>
+                    <button class="mt-6 w-full bg-green-600 text-white py-3 rounded-lg text-xl hover:bg-green-500 transition duration-300">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white shadow-2xl rounded-lg overflow-hidden">
+                <img src="c:\Users\WALTON\Downloads\download.jpg" alt="Tulip Basket" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Tulip Basket</h3>
+                    <p class="text-gray-500 mb-6">A vibrant basket of tulips for any special moment.</p>
+                    <span class="text-2xl font-bold text-green-600">$24.99</span>
+                    <button class="mt-6 w-full bg-green-600 text-white py-3 rounded-lg text-xl hover:bg-green-500 transition duration-300">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white shadow-2xl rounded-lg overflow-hidden">
+                <img src="c:\Users\WALTON\Downloads\images.jpg" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">Lily Arrangement</h3>
+                    <p class="text-gray-500 mb-6">Elegant lilies for a sophisticated touch.</p>
+                    <span class="text-2xl font-bold text-green-600">$34.99</span>
+                    <button class="mt-6 w-full bg-green-600 text-white py-3 rounded-lg text-xl hover:bg-green-500 transition duration-300">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-20 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-10">📞 Contact Us</h2>
+        <p class="text-xl mb-6">Have any questions or special requests? We're here to help!</p>
+        <a href="mailto:contact@flowershop.com" class="bg-green-600 text-white py-3 px-8 rounded-lg text-xl hover:bg-green-500">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6 text-center text-lg">
+        <p>&copy; 2025 FlowerShop. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
